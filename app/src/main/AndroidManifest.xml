@@ -11,8 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JashanDemo">
+        <activity
+            android:name=".SimpleList"
+            android:exported="true">
 
-        <receiver android:name=".MyReceiver"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name=".MyReceiver" />
 
         <activity
             android:name=".Timer"
@@ -26,11 +37,6 @@
         <activity
             android:name=".WelcomeUser"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity2"

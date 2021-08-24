@@ -7,12 +7,12 @@
     tools:context=".Timer">
 
     <EditText
+        android:id="@+id/alarmEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/alarmEditText"
-        android:hint="Enter the time in seconds"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:hint="Enter the time in seconds" />
 
     <Button
         android:layout_width="wrap_content"
