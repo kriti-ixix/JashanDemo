@@ -9,8 +9,10 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.384963768115942" />
+        <entry key="app/src/main/res/layout/activity_music_list.xml" value="0.21829710144927536" />
+        <entry key="app/src/main/res/layout/activity_simple_list.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_timer.xml" value="0.389945652173913" />
-        <entry key="app/src/main/res/layout/activity_welcome_user.xml" value="0.20923913043478262" />
+        <entry key="app/src/main/res/layout/activity_welcome_user.xml" value="0.25" />
       </map>
     </option>
   </component>

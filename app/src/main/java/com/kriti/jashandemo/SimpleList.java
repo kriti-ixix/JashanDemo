@@ -2,6 +2,7 @@ package com.kriti.jashandemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,8 +28,11 @@ public class SimpleList extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(SimpleList.this, names[i], Toast.LENGTH_SHORT).show();
-                Log.d("Checking", names[i]);
+                //Toast.makeText(SimpleList.this, names[i], Toast.LENGTH_SHORT).show();
+                //Log.d("Checking", names[i]);
+                Intent in = new Intent(SimpleList.this, DisplayList.class);
+                in.putExtra("information", names[i]);
+                startActivity(in);
             }
         });
     }
