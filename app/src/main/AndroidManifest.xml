@@ -12,14 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JashanDemo">
         <activity
-            android:name=".ListenerDemo"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".DisplayList"
-            android:exported="true" />
-        <activity
-            android:name=".MusicList"
+            android:name=".FileHandling"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,9 +21,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SimpleList"
+            android:name=".ListenerDemo"
+            android:exported="true"></activity>
+        <activity
+            android:name=".DisplayList"
+            android:exported="true" />
+        <activity
+            android:name=".MusicList"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".SimpleList"
+            android:exported="true"></activity>
 
         <receiver android:name=".MyReceiver" />
 
