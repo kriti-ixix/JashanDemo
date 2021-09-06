@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JashanDemo">
         <activity
+            android:name=".RecyclerDemo"
+            android:exported="true" />
+        <activity
             android:name=".FileHandling"
             android:exported="true">
             <intent-filter>
@@ -22,17 +25,16 @@
         </activity>
         <activity
             android:name=".ListenerDemo"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".DisplayList"
             android:exported="true" />
         <activity
             android:name=".MusicList"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".SimpleList"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <receiver android:name=".MyReceiver" />
 
