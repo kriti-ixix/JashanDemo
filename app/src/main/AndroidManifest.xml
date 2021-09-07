@@ -13,15 +13,16 @@
         android:theme="@style/Theme.JashanDemo">
         <activity
             android:name=".RecyclerDemo"
-            android:exported="true" />
-        <activity
-            android:name=".FileHandling"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".FileHandling"
+            android:exported="true">
         </activity>
         <activity
             android:name=".ListenerDemo"
