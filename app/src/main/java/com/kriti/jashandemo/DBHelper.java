@@ -27,6 +27,16 @@ public class DBHelper extends SQLiteOpenHelper
         return result;
     }
 
+    long updateValues(int rn, String n, float m)
+    {
+        SQLiteDatabase sq = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("name", n);
+        cv.put("marks", m);
+        long result = sq.update(TABLE, cv, "rollno = " + rn, null);
+        return result;
+    }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("create table " + TABLE + " (rollno integer primary key, name text, marks float)");
