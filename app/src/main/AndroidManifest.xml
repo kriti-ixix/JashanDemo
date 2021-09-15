@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kriti.jashandemo">
+    package="com.kriti.jashandemo" >
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,12 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JashanDemo">
+        android:theme="@style/Theme.JashanDemo" >
         <activity
-            android:name=".StudentsDisplay"
-            android:exported="true" />
-        <activity
-            android:name=".StudentForm"
+            android:name=".Gallery"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +22,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".StudentsDisplay"
+            android:exported="true" />
+        <activity
+            android:name=".StudentForm"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".RecyclerDemo"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".FileHandling"
             android:exported="true" />
