@@ -2,11 +2,17 @@ package com.kriti.jashandemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -46,7 +52,7 @@ public class GettingAPage extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             String result = ""; URL url;
-            HttpURLConnection connection = null;
+            HttpURLConnection connection;
 
             try
             {
@@ -71,9 +77,49 @@ public class GettingAPage extends AppCompatActivity {
             catch (Exception e)
             {
                 e.printStackTrace();
-                return null;
+                return "";
             }
+        }
 
+        @Override
+        protected void onPostExecute(String s)
+        {
+            super.onPostExecute(s);
+            if (s.equals(""))
+            {
+                //There was some error
+                AlertDialog.Builder builder = new AlertDialog.Builder(GettingAPage.this);
+                builder.setTitle("Error!");
+                builder.setMessage("There was some error");
+
+                builder.setPositiveButton("Got it", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(GettingAPage.this, "Try again", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+            else
+            {
+                try
+                {
+                    JSONObject json = new JSONObject(s);
+
+                    JSONObject coordJson = json.getJSONObject("coord");
+                    Double longitude = coordJson.getDouble("lon");
+                    Double latitude = coordJson.getDouble("lat");
+
+                    JSONArray weatherArray = json.getJSONArray("weather");
+
+                }
+                catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }
