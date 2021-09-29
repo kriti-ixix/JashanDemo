@@ -50,7 +50,7 @@ public class InsertStudent extends AppCompatActivity {
                 marks = marksEditText.getText().toString();
                 cls = classEditText.getText().toString();
 
-                String url = "http://192.168.29.2/jashandemo/inserting.php";
+                String url = "http://"+ getString(R.string.host) +"/jashandemo/inserting.php";
                 RequestQueue queue = Volley.newRequestQueue(InsertStudent.this);
                 StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
@@ -94,6 +94,8 @@ public class InsertStudent extends AppCompatActivity {
                         return map;
                     }
                 };
+
+                queue.add(request);
             }
         });
     }
