@@ -19,11 +19,13 @@
         <entry key="app/src/main/res/layout/activity_music_list.xml" value="0.21829710144927536" />
         <entry key="app/src/main/res/layout/activity_recycler_demo.xml" value="0.23550724637681159" />
         <entry key="app/src/main/res/layout/activity_simple_list.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_song_time.xml" value="0.22509057971014493" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_student_form.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_students_display.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_timer.xml" value="0.389945652173913" />
         <entry key="app/src/main/res/layout/activity_user_location.xml" value="0.2318840579710145" />
+        <entry key="app/src/main/res/layout/activity_video_player.xml" value="0.22509057971014493" />
         <entry key="app/src/main/res/layout/activity_welcome_user.xml" value="0.25" />
         <entry key="app/src/main/res/layout/custom_gallery.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/custom_layout.xml" value="0.33" />

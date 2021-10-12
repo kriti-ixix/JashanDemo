@@ -30,6 +30,8 @@ public class UserLocation extends AppCompatActivity {
             @Override
             public void onLocationChanged(@NonNull Location location) {
                 Log.i("Location", location.toString());
+                Log.i("Location", "Latitude " + location.getLatitude());
+                Log.i("Location", "Longitude " + location.getLongitude());
             }
         };
 
