@@ -42,7 +42,7 @@ public class MotionSensor extends AppCompatActivity {
         {
             sensorManager.unregisterListener(sel);
         }
-        
+
         super.onStop();
     }
 
