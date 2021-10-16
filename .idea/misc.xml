@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/edit_text_bg.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_bottom_nav.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_fading.xml" value="0.29769772835075925" />
         <entry key="app/src/main/res/layout/activity_file_handling.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_getting_apage.xml" value="0.2296195652173913" />
