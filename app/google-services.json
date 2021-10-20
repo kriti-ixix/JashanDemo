@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "28319820496",
+    "project_id": "jashandemo",
+    "storage_bucket": "jashandemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28319820496:android:704750d1216bd1ff9f8cd5",
+        "android_client_info": {
+          "package_name": "com.kriti.jashandemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28319820496-pe0fpp3bko8chairqr1nhnq96tbgc52c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBByow5W5KVd92bm_Aj9B73l864ROLXdIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28319820496-pe0fpp3bko8chairqr1nhnq96tbgc52c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
