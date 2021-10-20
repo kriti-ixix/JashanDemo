@@ -22,4 +22,13 @@
         android:layout_below="@id/downloadButton"
         android:layout_marginTop="25dp"/>
 
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/progressBar"
+        android:layout_below="@id/downloadedImageView"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
 </RelativeLayout>
